@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz App</title>
+	<link rel="stylesheet" type="text/css" href="Quiz.css">
+</head>
+<body>
+    <div class="maindiv">
+	<header>
+		<h1>Hello-Computer Quiz App</h1>
+	</header>
+	
+	<main>
+		<section id="start-page" class="page">
+			<h2>Welcome to the Quiz App</h2>
+			<button id="start-btn">Start Quiz</button>
+		</section>
+		
+		<section id="quiz-page" class="page hidden">
+			<h2 id="question"></h2>
+			<ul id="choices"></ul>
+			<p id="timer">Time Remaining: <span id="time"></span></p>
+			<button id="submit-btn">Submit</button>
+		</section>
+		
+		<section id="results-page" class="page hidden">
+			<h2>Quiz Results:</h2>
+			<p>You answered <span id="correct"></span> out of <span id="total"></span> questions correctly!</p>
+			<button id="restart-btn">Restart Quiz</button>
+		</section>
+	</main>
+</div>
+	<script src="Quiz.js"></script>
+</body>
+</html>
